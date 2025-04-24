@@ -94,6 +94,7 @@ export const getAllUsers = async (req: AuthenticatedRequest, res: Response): Pro
       filter.isBlock = isBlock === "true";
     }
 
+
     if (catagory === "5-8") {
       filter.age = { $gte: 4, $lte: 8 };
     } else if (catagory === "9-12") {
