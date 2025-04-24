@@ -1,7 +1,9 @@
 import express from "express";
 import { asyncErrorHandler } from "../middlewares/asyncErrorHandler";
 import { authMiddleware } from "../middlewares/auth"
+
 import { getTopCourses, getUserCourseProgress, markLessonAsComplete, quizScoreUpdate } from "../controller/progressController";
+
 
 
 const progressRouter = express.Router();
